@@ -1,0 +1,20 @@
+<h1>{{appVm.title}}</h1>
+<h3>A template that sets up an Angular 1.x app to do Test Driven Development</h3>
+<form name="myForm">
+    <fieldset>
+        <legend>Example:</legend>
+        <label>Name:
+            <input type="text" name="name" 
+                class="qa-name"
+                ng-model="appVm.data.name.value" 
+                ng-disabled="!appVm.data.name.enabled"
+            >
+        </label>
+        <label>
+            <input type="checkbox" name="enabled" 
+                class="qa-name-enabled"
+                ng-model="appVm.data.name.enabled"
+            > Enable
+        </label>
+    </fieldset>
+</form>

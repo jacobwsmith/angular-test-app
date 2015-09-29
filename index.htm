@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl as appVm">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title ng-bind="appVm.title"></title>
+    
+    <!-- Styles  -->
+    <link href="/app/app.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <!-- HTML -->
+    <div ng-cloak ng-include="'app/app.htm'"></div>
+    
+    <!-- Scripts -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.min.js"></script>
+    <script src="app/main.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/data-service/data-service.js"></script>
+
+</body>
+
+</html>
